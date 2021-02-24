@@ -1,5 +1,9 @@
 package com.ecommerce.shop.api;
 
+import com.ecommerce.shop.entity.Cart;
+import com.ecommerce.shop.entity.ProductInOrder;
+import com.ecommerce.shop.entity.User;
+import com.ecommerce.shop.repository.ProductInOrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
