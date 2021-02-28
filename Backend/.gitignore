@@ -1,4 +1,13 @@
+# compiled output
+/dist
+/tmp
+/out-tsc
 
+# dependencies
+/node*
+/node_modules
+
+# misc
 /target/
 !.mvn/wrapper/maven-wrapper.jar
 
