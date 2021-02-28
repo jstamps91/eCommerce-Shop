@@ -1,12 +1,10 @@
 # Online Shop Application
 
-#### A full-stack Online Shop web application using Spring Boot 2 and Angular 7. 
-This is a Single Page Appliaction with client-side rendering. It includes [backend](https://github.com/zhulinn/SpringBoot-Angular7-ShoppingCart/tree/backend) and [frontend](https://github.com/zhulinn/SpringBoot-Angular7-ShoppingCart/tree/frontend) two seperate projects on different branches.
+#### A full-stack Online Shop web application using Spring Boot 2 and Angular 11. 
+This is a Single Page Appliaction with client-side rendering. It includes [backend](https://github.com/zhulinn/SpringBoot-Angular7-ShoppingCart/tree/backend) and [frontend](https://github.com/zhulinn/SpringBoot-Angular7-ShoppingCart/tree/frontend) as two seperate projects.
 The frontend client makes API calls to the backend server when it is running.
 
 #### Live Demo: [https://springboot-angular-shop.herokuapp.com/](https://springboot-angular-shop.herokuapp.com/)
-
-> This project is based on my previous project [Online-Shopping-Store](https://github.com/zhulinn/Online-Shopping-Store), which uses FreeMarker as template engine for server-side rendering. 
 
 ## Screenshot
 ![](https://raw.githubusercontent.com/zhulinn/blog/hexo/source/uploads/post_pics/spring-angular/cart.png)
@@ -25,8 +23,8 @@ The frontend client makes API calls to the backend server when it is running.
 - Pagination
 ## Technology Stacks
 **Backend**
-  - Java 11
-  - Spring Boot 2.2
+  - Java 14
+  - Spring Boot 2.4
   - Spring Security
   - JWT Authentication
   - Spring Data JPA
@@ -35,7 +33,7 @@ The frontend client makes API calls to the backend server when it is running.
   - Maven
 
 **Frontend**
-  - Angular 7
+  - Angular 11
   - Angular CLI
   - Bootstrap
 
