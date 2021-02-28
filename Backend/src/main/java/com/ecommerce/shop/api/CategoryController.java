@@ -2,8 +2,9 @@ package com.ecommerce.shop.api;
 
 import com.ecommerce.shop.entity.ProductCategory;
 import com.ecommerce.shop.entity.ProductInfo;
-import com.ecommerce.shop.service.*;
-import com.ecommerce.shop.validation.*;
+import com.ecommerce.shop.service.CategoryService;
+import com.ecommerce.shop.service.ProductService;
+import com.ecommerce.shop.validation.response.CategoryPage;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -34,7 +35,7 @@ public class CategoryController {
                                 @RequestParam(value = "page", defaultValue = "1") Integer page,
                                 @RequestParam(value = "size", defaultValue = "3") Integer size) {
 
-        productCategory cat = categoryService.findByCategoryType(categoryType);
+        ProductCategory cat = categoryService.findByCategoryType(categoryType);
         PageRequest request = PageRequest.of(page - 1, size);
         Page<ProductInfo> productInCategory = productService.findAllInCategory(categoryType, request);
         var tmp = new CategoryPage("", productInCategory);
